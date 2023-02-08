@@ -16,6 +16,7 @@ export default class UserModel {
       'INSERT INTO Trybesmith.users(username, vocation, level, password) VALUES(?,?,?,?)',
       [username, vocation, level, password],
     );
+    
     const token = generateToken({ id, username, password });// gerando um token com o payload e guardando na constante "token"
     const newUser: IToken = { token };
     return newUser;
