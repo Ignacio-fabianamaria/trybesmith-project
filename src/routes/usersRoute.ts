@@ -6,13 +6,13 @@ const router = Router();
 
 const userController = new UserController();
 
-router.use(
+router.post(
+  '/users', 
   ValidateNewUser.validateUsername,
   ValidateNewUser.validateVocation,
   ValidateNewUser.validateLevel,
-  ValidateNewUser.validatePassword,
+  ValidateNewUser.validatePassword, 
+  (req, res) => userController.create(req, res),
 );
-
-router.post('/users', (req, res) => userController.create(req, res));
 
 export default router;

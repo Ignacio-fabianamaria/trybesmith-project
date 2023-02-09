@@ -8,8 +8,11 @@ const productController = new ProductController();
 
 router.get('/products', (req, res) => productController.getAll(req, res));
 
-router.use(ValidateNewProduct.validateName, ValidateNewProduct.validateAmount);
-
-router.post('/products', (req, res) => productController.create(req, res));
+router.post(
+  '/products',
+  ValidateNewProduct.validateName,
+  ValidateNewProduct.validateAmount,
+  (req, res) => productController.create(req, res),
+);
 
 export default router;
