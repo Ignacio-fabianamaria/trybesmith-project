@@ -1,13 +1,52 @@
-# :construction: README customizado em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto no qual você pode customizar e reutilizar todas as vezes que for executar o trybe-publisher.
+#  Trybesmith!
 
-Para deixá-lo com a sua cara, basta alterar o seguinte arquivo da sua máquina: ~/.student-repo-publisher/custom/_NEW_README.md
 
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+## :memo: Descrição
+<p>Projeto Trybesmith possui uma dinâmica de criação de uma loja de itens medievais, no formato de uma API, aplicando um CRUD e conceitos de Typescript. </p>
+
+#  🛣️ GET / products
+
+ ```json
+ 
+[
+  {
+    "id": 1,
+    "name": "Poção de cura",
+    "amount": "20 gold",
+    "orderId": null
+  },
+  {
+    "id": 2,
+    "name": "Escudo do Herói",
+    "amount": "100 diamond",
+    "orderId": 1
+  }
+]
+
+```
+
+## :books: Objetivos do Projeto: 
+  
+ Fixar os conceitos introdutórios de Typescript.
+  
+  <b>Objetivo proposto :</b>
+  
+* Desenvolver camadas na aplicação  (Models, Service e Controllers).
+
+* Realizar as operações básicas de Criação, Leitura, Atualização e Exclusão (CRUD) no banco de dados
+
+* Criar um banco de dados a partir de uma planilha que contém tabelas e dados.
+
+* Criar alguns endpoints que irão ler e escrever em um banco de dados, utilizando o MySQL.
+  
+
+## :wrench: Tecnologias utilizadas
+  
+* Docker
+  
+* Mysql 
+
+* Typescript
+
+* node.js
+
