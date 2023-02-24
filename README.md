@@ -1,4 +1,4 @@
-#  Trybesmith!
+#  Trybesmith! 🛡️ ⚗️  🗡️
 
 
 ## :memo: Descrição
